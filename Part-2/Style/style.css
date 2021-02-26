@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Museo Sans Rounded';
+    src: url(/Fonts/MuseoSansRounded300.woff);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+.main {
+    width: 800px;
+    height: 600px;
+    background-image: url(../img/background.png);
+    margin: 50px auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+.card {
+    width: 686px;
+    height: 391px;
+    -webkit-box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+            box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+    border-radius: 10px;
+    background-color: #111a28;
+}
+
+
+.card__logo {
+    margin: 24px 0 0 21px;
+}
+
+
+.card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.card__shoes {
+    margin: 69px 79px 0 36px;
+    width: 329px;
+    height: 159px;
+
+}
+
+
+.card__title {
+    color: #e1e1e1;
+    font-family: "Museo Sans Rounded";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    margin-top: 21px;
+    width: 170px;
+}
+
+
+.card__subtitle {
+    color: #e1e1e1;
+    margin-top: 16px;
+    opacity: 0.54;
+    font-size: 14px;
+    font-family: "Museo Sans Rounded";
+    font-weight: 400;
+}
+
+
+.card__stars {
+    margin: 24px 0 27px 0;
+}
+
+
+.card__control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.card__size, .card__qty {
+    color: #e1e1e1;
+    border: 1px solid #ffffff;
+    background-color: #111a28;
+    opacity: 0.26;
+    width: 69px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Museo Sans Rounded";
+}
+
+
+.card__buttun {
+    width: 184px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: #4c525a;
+    opacity: 0.26;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 26px;
+}
+
+
+.card__buttun--text {
+    color: #e1e1e1;
+    font-family: "Museo Sans Rounded";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.card__bullets {
+    margin: 74px 0 0 178px;
+}
+
+
+.card__bullets--item {
+    margin-right: 10px;
+    width: 10px;
+    height: 9px;
+}
+
+
+.card__bullets--item:hover {
+    border: 1px solid #7e838b;
+    border-radius: 50%;
+}
