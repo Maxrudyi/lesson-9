@@ -98,6 +98,9 @@
 }
 
 
+
+
+
 .button {
     width: 200px;
     height: 55px;
@@ -138,13 +141,23 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-page__img {
+    margin-left: 100px;
+    width: 566px;
+    height: 559px;
+    
 }
 
 
 .second-page__text {
-    margin-left: 64px;
+    margin-right: 166px;
     max-width: 500px;
-    margin-top: 180px;
+    margin-top: -80px;
+    max-height: 255px;
 }
 
 
@@ -161,4 +174,6 @@
     font-size: 17px;
     margin-top: 34px;
     opacity: .5;
+    letter-spacing: 2px;
+    
 }
