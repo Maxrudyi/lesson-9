@@ -129,15 +129,81 @@
 
 
 
+/* scroll */
+
 .scroll {
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 295px;
 } 
+
+
+
+
+.mouse {
+    position: relative;
+    width: 24px;
+    height: 40px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid black;
+    overflow: hidden;
+  }
+
+
+
+  .mouse:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    -webkit-animation: animate 1.2s linear infinite;
+            animation: animate 1.2s linear infinite; 
+  }
+
+
+  .mouse:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    border-radius: 30%;
+    background-color: black;
+    top: 5px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+  }
+
+
+  @-webkit-keyframes animate {
+    0% {-webkit-transform: translate(-50%,20px);transform: translate(-50%,20px); opacity: 0;}
+    50% {-webkit-transform: translate(-50%,60px);transform: translate(-50%,60px); opacity: 1;}
+    100% {-webkit-transform: translate(-50%,100px);transform: translate(-50%,100px); opacity: 0;}
+  }
+
+
+  @keyframes animate {
+    0% {-webkit-transform: translate(-50%,20px);transform: translate(-50%,20px); opacity: 0;}
+    50% {-webkit-transform: translate(-50%,60px);transform: translate(-50%,60px); opacity: 1;}
+    100% {-webkit-transform: translate(-50%,100px);transform: translate(-50%,100px); opacity: 0;}
+  }
 
 
 
@@ -261,8 +327,8 @@
 .item__img {
     width: 370px;
     height: 310px;
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
     background: -o-linear-gradient(transparent, black);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
     background: linear-gradient(transparent, black);
     position: relative;
 }
